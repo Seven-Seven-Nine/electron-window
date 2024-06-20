@@ -1,0 +1,93 @@
+:root {
+    --color-scheme: dark;
+    color-scheme: var(--color-scheme);
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+}
+
+header {
+    -webkit-app-region: drag;
+    -webkit-user-select: none;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    height: 30px;
+    background-color: #0b0e14;
+    border-bottom: 1px solid #333333;
+    display: flex;
+    flex-direction: row;
+}
+
+.icoHeader {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 100%;
+    padding: 0 0.5em;
+}
+
+.icoHeader svg {
+    height: 100%;
+} 
+
+.titleHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.titleHeader label {
+    font-size: 10pt;
+}
+
+.btnHeader, .btnHeaderClose  {
+    -webkit-app-region: no-drag;
+    transition: all 0.1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    min-width: 30px;
+    height: 100%;
+
+    &:hover {
+        transition: all 0.1s;
+        background-color: rgb(58, 58, 58);
+    }
+}
+
+.btnHeaderClose {
+
+    &:hover {
+        background-color: rgb(255, 0, 0);
+    }
+
+}
+
+.btnHeaderClose svg {
+    width: 15px;
+    height: 40%;
+}
+
+.btnHeader svg {
+    width: 15px;
+    height: 40%;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14pt;
+    background-color: #0d1017;
+}
